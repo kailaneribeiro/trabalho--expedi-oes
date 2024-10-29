@@ -13,4 +13,4 @@ app.use('/explorer', explorerRouter)
 app.use('/species', speciesRouter)
 app.use('/expedition', expeditionRouter)
 
-app.listen(3000,() => console.log('servidor rodando na port 3000'))
+app.listen(process.env.PORT,() => console.log('servidor rodando na port 3000'))
