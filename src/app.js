@@ -1,9 +1,11 @@
 import express from 'express'
 import connectDB from './config/db.js'
+import dotenv from 'dotenv'
 import explorerRouter from './routers/explorerRouter.js'
 import speciesRouter from './routers/speciesRouter.js'
 import expeditionRouter from './routers/expeditionRouter.js'
 
+dotenv.config()
 connectDB()
 
 const app = express()
